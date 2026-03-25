@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+
+  /* 🌌 Deep modern background */
+  background: radial-gradient(circle at top, #1a1a2e, #0f172a);
+  color: #fff;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+/* 🪟 Glass Cards */
+.form, .total, .list, .chart {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.form:hover, .total:hover, .list:hover, .chart:hover {
+  transform: translateY(-3px);
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+
+  background: rgba(255,255,255,0.08);
+  color: white;
+
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+/* 🔥 Gradient Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+
+  background: linear-gradient(135deg, #7f5af0, #2cb67d);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(127,90,240,0.5);
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 25px rgba(127,90,240,0.8);
+}
+
+/* Total */
+.total {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* 🧾 Expense Cards */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.02);
+}
+
+/* Delete Button */
+.delete {
+  background: linear-gradient(135deg, #ff6b6b, #ff3b3b);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* 📊 Chart */
+.chart-bar {
+  height: 22px;
+  margin: 10px 0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  font-size: 12px;
+
+  color: white;
+  font-weight: 500;
+
+  animation: grow 0.6s ease;
+
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
