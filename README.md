@@ -49,6 +49,13 @@ expense-tracker/
    * Category-based chart
 
 ---
+## 🛡️ Validations & Edge Cases
+
+- Prevents empty input submission  
+- Ensures amount is greater than zero  
+- Handles empty state (no expenses added)  
+- Safely updates UI after deletion  
+---
 
 ## 📊 Chart Logic
 
@@ -86,7 +93,9 @@ This project demonstrates:
 
 ## 📸 Preview
 
-*Add a screenshot of your project here*
+<img src="https://github.com/user-attachments/assets/d2958a93-eea6-4983-bc1a-69a4a5de892b" width="55%" />
+
+
 
 ---
 
@@ -96,6 +105,4 @@ This project demonstrates:
 
 ---
 
-## 📌 Note
 
-This project is part of a consistent effort to build and publish projects regularly while improving frontend development skills.
